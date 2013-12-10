@@ -1,19 +1,5 @@
 <h1>Let's Create a Math Problem!</h1>
 
-<%= form_for :problem, url: problems_path do |f| %>
-	<p>
-		<%= f.label :question %><br>
-		<%= f.text_area :question %>
-	</p>
-
-	<p>
-		<%= f.label :answer %><br>
-		<%= f.text_area :answer %>
-	</p>
-
-	<p>
-		<%= f.submit %>
-	</p>
-<% end %>
+<%= render 'form' %>
 
 <%= link_to "See all the Math Problems", problems_path %>
