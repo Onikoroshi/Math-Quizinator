@@ -1,0 +1,255 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "quiz/app/views/welcome/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 80,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "quiz/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1621,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Build: Build"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/peter/Math-Quizinator/quiz/Gemfile",
+		"/home/peter/Math-Quizinator/README.md",
+		"/home/peter/koans/about_strings.rb",
+		"/home/peter/koans/about_hashes.rb",
+		"/home/peter/koans/about_array_assignment.rb",
+		"/home/peter/koans/about_arrays.rb",
+		"/home/peter/koans/about_objects.rb",
+		"/home/peter/koans/about_nil.rb",
+		"/home/peter/koans/path_to_enlightenment.rb",
+		"/home/peter/.config/sublime-text-2/Packages/Ruby/Ruby.sublime-build",
+		"/home/peter/koans/about_asserts.rb",
+		"/usr/local/bin/sass",
+		"/home/peter/HelloWorld/README",
+		"/home/peter/HelloWorld/blog/app/controllers/posts_controller.rb",
+		"/home/peter/HelloWorld/blog/app/controllers/comments_controller.rb",
+		"/home/peter/.config/sublime-text-2/Packages/User/Ruby.sublime-settings",
+		"/home/peter/HelloWorld/blog/app/views/comments/_comment.html.erb",
+		"/home/peter/HelloWorld/blog/app/views/comments/_form.html.erb",
+		"/home/peter/HelloWorld/blog/app/views/posts/show.html.erb",
+		"/home/peter/HelloWorld/blog/app/models/post.rb",
+		"/home/peter/HelloWorld/blog/app/views/posts/_comment.html.erb",
+		"/home/peter/HelloWorld/blog/app/views/posts/_form.html.erb",
+		"/home/peter/HelloWorld/blog/config/routes.rb",
+		"/home/peter/HelloWorld/blog/app/models/comment.rb",
+		"/home/peter/HelloWorld/blog/app/views/posts/index.html.erb",
+		"/home/peter/HelloWorld/blog/test/controllers/posts_controller_test.rb",
+		"/home/peter/HelloWorld/blog/app/views/posts/edit.html.erb",
+		"/home/peter/HelloWorld/blog/app/views/posts/new.html.erb",
+		"/home/peter/HelloWorld/blog/app/views/welcome/index.html.erb",
+		"/home/peter/.bash_profile",
+		"/home/peter/HelloWorld/blog/Gemfile",
+		"/etc/apt/sources.list",
+		"/ect/apt/sources.list",
+		"/home/peter/.rvm/log/1386453500/update_system.log",
+		"/etc/apt/sources.list.save",
+		"/home/peter/.rvm/log/1386453351/update_system.log",
+		"/home/peter/.local/share/applications/defaults.list",
+		"/home/peter/.local/share/applications/sublime2.desktop",
+		"/usr/share/applications/smartgit.desktop",
+		"/usr/share/applications/sublime.desktop",
+		"/usr/bin/sublime-text",
+		"/usr/share/applications/Sublime Text",
+		"/usr/shar/applications/Sublime Text"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "quiz/app/views/welcome/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 80,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "quiz/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 221.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 172.0,
+	"status_bar_visible": true
+}
