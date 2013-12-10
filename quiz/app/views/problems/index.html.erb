@@ -1,0 +1,18 @@
+<h1>All the Math Problems!</h1>
+
+</p>
+	<%= link_to "Create a new Math Problem", new_problem_path %>
+</p>
+<table>
+	<tr>
+		<th>Question</th>
+		<th>Answer</th>
+	</tr>
+
+	<% @problems.each do |problem| %>
+		<tr>
+			<td><%= problem.question %></td>
+			<td><%= problem.answer %></td>
+		</tr>
+	<% end %>
+</table>
