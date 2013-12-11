@@ -39,6 +39,14 @@ class ProblemsController < ApplicationController
 		end
 	end
 
+	# deleting an existing math problem
+	def destroy
+		@problem = Problem.find(params[:id])
+		@problem.destroy
+
+		redirect_to problems_path
+	end
+
 	private
 	def problem_params
 		params.require(:problem).permit(:question, :answer)

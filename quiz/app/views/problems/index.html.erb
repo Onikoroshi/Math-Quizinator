@@ -9,6 +9,7 @@
 		<th>Question</th>
 		<th>Answer</th>
 		<th></th>
+		<th></th>
 	</tr>
 
 	<% @problems.each do |problem| %>
@@ -16,6 +17,7 @@
 			<td style="padding-left: 2em; padding-right:2em;"><%= problem.question %></td>
 			<td style="padding-left: 2em; padding-right:2em;"><%= problem.answer %></td>
 			<td style="padding-left: 2em; padding-right:2em;"><%= link_to "Edit", edit_problem_path(problem) %></td>
+			<td style="padding-left: 2em; padding-right:2em;"><%= link_to "Destroy", problem_path(problem), method: :delete, data: { confirm: "Are you sure?" } %></td>
 		</tr>
 	<% end %>
 </table>
