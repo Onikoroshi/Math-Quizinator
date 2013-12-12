@@ -1,0 +1,29 @@
+<%= form_for @exam do |f| %>
+	<% if @exam.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@exam.errors.count, "error") %> prevented this Math exam from being saved:</h2>
+			<ul>
+				<% @exam.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<p>
+		<%= f.label :title %><br>
+		<%= f.text_field :title %>
+	</p>
+
+	<h2>Available Problems:</h2>
+	<% Problem.all.each do |p| %>
+		<p>
+			<%= check_box_tag("exam[problem_ids][]", p.id, @exam.problems.include?(p)) %>
+			<%= p.question %>
+		</p>
+	<% end %>
+
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

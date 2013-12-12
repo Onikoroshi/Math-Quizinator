@@ -1,0 +1,14 @@
+<p>
+	<strong>Quiz Title:</strong>
+	<%= @exam.title %>
+</p>
+
+<strong>Questions in this Quiz:</strong>
+<ul>
+	<% @exam.problems.each do |prob| %>
+		<li><%= prob.question %></li>
+	<% end %>
+</ul>
+
+<%= link_to "Edit this Quiz", edit_exam_path(@exam) %><br />
+<%= link_to "See all the Quizzes", exams_path %>
