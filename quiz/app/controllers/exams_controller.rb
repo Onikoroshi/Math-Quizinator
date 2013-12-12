@@ -29,6 +29,13 @@ class ExamsController < ApplicationController
 	# update an existing quiz
 	def update
 		@exam = Exam.find(params[:id])
+		# @exam.problems = Problem.all
+		@exam.problems = []
+
+		params[:exam][:problem_ids].each {
+			|prob_id|
+			@exam.problems << Problem.find(prob_id)
+		}
 		
 		if @exam.update_attributes(params[:exam].permit(:title, :problem_ids))
 			redirect_to @exam

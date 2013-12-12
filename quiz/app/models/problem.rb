@@ -6,5 +6,6 @@ class Problem < ActiveRecord::Base
 	validates :answer, presence: true
 
 	accepts_nested_attributes_for :exams
+	# accepts_nested_attributes_for :exams_problems
 	# attr_accessible :exam_ids
 end

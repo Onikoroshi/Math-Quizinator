@@ -5,5 +5,6 @@ class Exam < ActiveRecord::Base
 	validates :title, presence: true
 
 	accepts_nested_attributes_for :problems
+	# accepts_nested_attributes_for :exams_problems
 	# attr_accessible :problem_ids
 end
