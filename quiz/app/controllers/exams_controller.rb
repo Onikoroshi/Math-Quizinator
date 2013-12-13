@@ -4,7 +4,13 @@ class ExamsController < ApplicationController
 	end
 
 	def create
-		@exam = Exam.new(params[:exam].permit(:title))
+		@exam = Exam.new(params[:exam].permit(:title, :problem_ids))
+
+		@exam.problems = []
+		params[:exam][:problem_ids].each {
+			|prob_id|
+			@exam.problems << Problem.find(prob_id)
+		}
 		
 		if @exam.save
 			redirect_to @exam
@@ -30,8 +36,8 @@ class ExamsController < ApplicationController
 	def update
 		@exam = Exam.find(params[:id])
 		# @exam.problems = Problem.all
-		@exam.problems = []
 
+		@exam.problems = []
 		params[:exam][:problem_ids].each {
 			|prob_id|
 			@exam.problems << Problem.find(prob_id)
@@ -42,5 +48,16 @@ class ExamsController < ApplicationController
 		else
 			render 'edit'
 		end
+	end
+
+	def take
+		@exam = Exam.find(params[:id])
+	end
+
+	def destroy
+		@exam = Exam.find(params[:id])
+		@exam.destroy
+
+		redirect_to exams_path
 	end
 end

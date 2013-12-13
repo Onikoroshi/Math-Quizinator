@@ -1,0 +1,14 @@
+<h1>We're taking a Quiz!</h1>
+<h2><%= @exam.title %></h2>
+
+<%= form_for @exam do |f| %>
+	<ol>
+		<% @exam.problems.each do |prob| %>
+			<li><%= f.label prob.question %> = <%= text_field_tag 'answers[]' %></li>
+		<% end %>
+	</ol>
+
+	<%= f.submit %>
+<% end %>
+
+<%= link_to 'Back to Exam List', exams_path %>

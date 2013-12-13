@@ -1,7 +1,12 @@
 <h1>All the Exams!</h1>
 
+</p>
+	<%= link_to "Create a new Quiz", new_exam_path %> |
+	<%= link_to "Home Page", root_path %>
+</p>
+
 <ul>
 	<% @exams.each do |exam| %>
-		<li><%= link_to exam.title, exam_path(exam) %></li>
+		<li><%= link_to exam.title, exam_path(exam) %> | <%= pluralize(exam.problems.count, "Question") %> | <%= link_to "Take Exam", take_exam_path(exam) %></li>
 	<% end %>
 </ul>

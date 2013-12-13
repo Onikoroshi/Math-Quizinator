@@ -18,7 +18,7 @@
 	<h2>Available Problems:</h2>
 	<% Problem.all.each do |p| %>
 		<p>
-			<%= check_box_tag("exam[problem_ids][]", p.id, @exam.problems.include?(p)) %>
+			<%= f.check_box_tag("exam[problem_ids][]", p.id, @exam.problems.include?(p)) %>
 			<%= p.question %>
 		</p>
 	<% end %>
