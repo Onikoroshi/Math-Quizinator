@@ -7,6 +7,6 @@
 
 <ul>
 	<% @exams.each do |exam| %>
-		<li><%= link_to exam.title, exam_path(exam) %> | <%= pluralize(exam.problems.count, "Question") %> | <%= link_to "Take Exam", take_exam_path(exam) %></li>
+		<li><%= link_to exam.title, exam_path(exam) %> | <%= pluralize(exam.problems.count, "Question") %> | <%= link_to "Take Quiz", take_exam_path(exam) %></li>
 	<% end %>
 </ul>

@@ -7,6 +7,7 @@ Quiz::Application.routes.draw do
   resources :exams do
     member do
       get 'take'
+      post 'result'
     end
   end
 

@@ -43,7 +43,7 @@ class ExamsController < ApplicationController
 			@exam.problems << Problem.find(prob_id)
 		}
 		
-		if @exam.update_attributes(params[:exam].permit(:title, :problem_ids))
+		if @exam.update_attributes(params[:exam].permit(:title, problems_attributes: [:id, :question, :answer]))
 			redirect_to @exam
 		else
 			render 'edit'
@@ -52,6 +52,22 @@ class ExamsController < ApplicationController
 
 	def take
 		@exam = Exam.find(params[:id])
+	end
+
+	def result
+		@exam = Exam.find(params[:id])
+		@results = []
+		@score = 0
+		params[:answers].each_with_index {
+			|ans, index|
+			prob = @exam.problems[index]
+			if ans == prob.answer
+				@score += 1
+				@results << [prob.question, prob.answer, false]
+			else
+				@results << [prob.question, "You said: " + ans.to_s + "; should be: " + prob.answer.to_s, true]
+			end
+		}
 	end
 
 	def destroy

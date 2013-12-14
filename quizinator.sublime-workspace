@@ -7,6 +7,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "quiz/app/controllers/exams_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1014,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "quiz/app/views/exams/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 614,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "quiz/app/views/exams/take.html.erb",
+			"settings":
+			{
+				"buffer_size": 303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "quiz/app/views/exams/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 335,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -36,18 +68,25 @@
 	},
 	"file_history":
 	[
-		"/home/peter/Math-Quizinator/quiz/app/models/problem.rb",
-		"/home/peter/Math-Quizinator/quiz/app/models/a_quiz.rb",
-		"/home/peter/Math-Quizinator/quiz/app/views/problems/index.html.erb",
-		"/home/peter/Math-Quizinator/quiz/app/controllers/problems_controller.rb",
-		"/home/peter/Math-Quizinator/quiz/app/views/problems/new.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/views/problems/edit.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/views/problems/_form.html.erb",
+		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/_form.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/index.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/controllers/problems_controller.rb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/index.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/show.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/views/problems/show.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/models/problem.rb",
+		"/home/peter/Math-Quizinator/quiz/app/models/exam.rb",
 		"/home/peter/Math-Quizinator/quiz/app/views/welcome/index.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/new.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/edit.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/new.html.erb",
+		"/home/peter/Math-Quizinator/quiz/db/migrate/20131212190824_create_exams_problems.rb",
+		"/home/peter/Math-Quizinator/quiz/app/models/a_quiz.rb",
 		"/home/peter/Math-Quizinator/quiz/app/views/layouts/application.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/views/problems/hew.html.erb",
-		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
 		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/peter/Math-Quizinator/quiz/Gemfile",
 		"/home/peter/Math-Quizinator/README.md",
@@ -109,6 +148,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"problem",
+			"Problem",
+			"problem",
+			"exams_problems",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
 			"post"
 		],
 		"highlight": true,
@@ -127,8 +179,114 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "quiz/app/controllers/exams_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								915
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "quiz/app/views/exams/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "quiz/app/views/exams/take.html.erb",
+					"settings":
+					{
+						"buffer_size": 303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "quiz/app/views/exams/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -192,6 +350,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 172.0,
+	"side_bar_width": 179.0,
 	"status_bar_visible": true
 }

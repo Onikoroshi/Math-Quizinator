@@ -6,7 +6,7 @@
 <strong>Questions in this Quiz:</strong>
 <ul>
 	<% @exam.problems.each do |prob| %>
-		<li><%= prob.question %></li>
+		<li><%= prob.question %> = <%= prob.answer %> | <%= link_to "Edit", edit_problem_path(prob) %></li>
 	<% end %>
 </ul>
 
