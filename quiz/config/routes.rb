@@ -6,8 +6,8 @@ Quiz::Application.routes.draw do
   resources :problems
   resources :exams do
     member do
-      get 'take'
-      post 'result'
+      get 'take' # need a special route to take an exam
+      post 'result' # and other special route to see the results of a taken exam
     end
   end
 
