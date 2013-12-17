@@ -4,5 +4,7 @@ class Problem < ActiveRecord::Base
   validates :question, presence: true
   validates :answer, presence: true
 
-  accepts_nested_attributes_for :exams
+  def is_in
+    return 1
+  end
 end

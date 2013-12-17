@@ -16,11 +16,13 @@
   </p>
 
   <h2>Available Problems:</h2>
-  <% Problem.all.each do |p| %>
-    <p>
-      <%= check_box_tag("exam[problem_ids][]", p.id, @exam.problems.include?(p)) %>
-      <%= p.question %> = <%= p.answer %> | <%= link_to "Edit", edit_problem_path(p) %>
-    </p>
+  <% Problem.all.each do |prob| %>
+    <%= f.fields_for "exam[problem_ids][]", prob do |builder| %>
+      <p>
+      <%= check_box_tag "exam[problem_ids][]", prob.id, @exam.problems.include?(prob) %>
+      <%= prob.question %> = <%= prob.answer %> | <%= link_to "Edit", edit_problem_path(prob) %>
+      </p>
+    <% end %>
   <% end %>
 
   <p>

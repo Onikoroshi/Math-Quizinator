@@ -7,6 +7,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/exams/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 836,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/exams_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/problems/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 558,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/problem.rb",
+			"settings":
+			{
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -36,6 +68,21 @@
 	},
 	"file_history":
 	[
+		"/home/peter/Math-Quizinator/app/models/problem.rb",
+		"/home/peter/Math-Quizinator/app/models/exam.rb",
+		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
+		"/home/peter/Math-Quizinator/app/controllers/exams_controller.rb",
+		"/home/peter/Math-Quizinator/app/views/problems/show.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/show.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/take.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/result.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/_form.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/edit.html.erb",
+		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
 		"/home/peter/Math-Quizinator/quiz/app/controllers/problems_controller.rb",
 		"/home/peter/Math-Quizinator/quiz/app/controllers/exams_controller.rb",
@@ -58,7 +105,6 @@
 		"/home/peter/Math-Quizinator/quiz/app/models/a_quiz.rb",
 		"/home/peter/Math-Quizinator/quiz/app/views/layouts/application.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/views/problems/hew.html.erb",
-		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/peter/Math-Quizinator/quiz/Gemfile",
 		"/home/peter/Math-Quizinator/README.md",
 		"/home/peter/koans/about_strings.rb",
@@ -105,7 +151,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -150,8 +196,119 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/exams/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/exams_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								843,
+								843
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/problems/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/problem.rb",
+					"settings":
+					{
+						"buffer_size": 181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

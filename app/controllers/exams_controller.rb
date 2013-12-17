@@ -43,7 +43,7 @@ class ExamsController < ApplicationController
     }
     
     # update the paramters of the exam object (as far as I can tell, the problem_attributes bit doesn't do anything)
-    if @exam.update_attributes(params[:exam].permit(:title, problems_attributes: [:id, :question, :answer]))
+    if @exam.update_attributes(params[:exam].permit(:title, :problem_ids))
       redirect_to @exam
     else
       render 'edit'
