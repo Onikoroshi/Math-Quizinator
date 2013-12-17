@@ -19,15 +19,7 @@
 			"file": "app/controllers/exams_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2256,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/problems/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 558,
+				"buffer_size": 2276,
 				"line_ending": "Unix"
 			}
 		},
@@ -68,13 +60,13 @@
 	},
 	"file_history":
 	[
+		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
 		"/home/peter/Math-Quizinator/app/models/problem.rb",
 		"/home/peter/Math-Quizinator/app/models/exam.rb",
 		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
 		"/home/peter/Math-Quizinator/app/controllers/exams_controller.rb",
 		"/home/peter/Math-Quizinator/app/views/problems/show.html.erb",
 		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
-		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/show.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/take.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/result.html.erb",
@@ -211,8 +203,8 @@
 						"selection":
 						[
 							[
-								645,
-								645
+								783,
+								783
 							]
 						],
 						"settings":
@@ -232,15 +224,15 @@
 					"file": "app/controllers/exams_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2256,
+						"buffer_size": 2276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								843,
-								843
+								985,
+								985
 							]
 						],
 						"settings":
@@ -250,41 +242,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 357.0,
+						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/problems/_form.html.erb",
-					"settings":
-					{
-						"buffer_size": 558,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								365,
-								365
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/models/problem.rb",
 					"settings":
 					{

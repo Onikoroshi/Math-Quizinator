@@ -36,11 +36,13 @@ class ExamsController < ApplicationController
     @exam = Exam.find(params[:id])
 
     # I couldn't figure out how to get Rails to automatically update the many-to-many relationship parameters, so I do it manually.
+=begin    
     @exam.problems = []
     params[:exam][:problem_ids].each {
       |prob_id|
       @exam.problems << Problem.find(prob_id)
     }
+=end    
     
     # update the paramters of the exam object (as far as I can tell, the problem_attributes bit doesn't do anything)
     if @exam.update_attributes(params[:exam].permit(:title, :problem_ids))

@@ -3,8 +3,4 @@ class Problem < ActiveRecord::Base
   
   validates :question, presence: true
   validates :answer, presence: true
-
-  def is_in
-    return 1
-  end
 end
