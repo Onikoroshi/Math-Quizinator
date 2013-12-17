@@ -1,0 +1,13 @@
+<p>
+  <strong>Question:</strong>
+  <%= @problem.question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @problem.answer %>
+</p>
+
+<%= link_to "Create another Math Problem", new_problem_path %><br />
+<%= link_to "Edit this Math Problem", edit_problem_path(@problem) %><br />
+<%= link_to "See all the Math Problems", problems_path %>
