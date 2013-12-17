@@ -8,26 +8,26 @@
 	"buffers":
 	[
 		{
-			"file": "quiz/app/views/problems/_form.html.erb",
+			"file": "app/views/exams/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 514,
+				"buffer_size": 836,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "quiz/app/views/problems/edit.html.erb",
+			"file": "app/controllers/exams_controller.rb",
 			"settings":
 			{
-				"buffer_size": 105,
+				"buffer_size": 2276,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "quiz/app/views/problems/new.html.erb",
+			"file": "app/models/problem.rb",
 			"settings":
 			{
-				"buffer_size": 118,
+				"buffer_size": 181,
 				"line_ending": "Unix"
 			}
 		}
@@ -60,17 +60,43 @@
 	},
 	"file_history":
 	[
-		"/home/peter/Math-Quizinator/quiz/app/views/problems/show.html.erb",
-		"/home/peter/Math-Quizinator/quiz/app/views/problems/index.html.erb",
-		"/home/peter/Math-Quizinator/quiz/app/views/problems/edit.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
+		"/home/peter/Math-Quizinator/app/models/problem.rb",
+		"/home/peter/Math-Quizinator/app/models/exam.rb",
+		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
+		"/home/peter/Math-Quizinator/app/controllers/exams_controller.rb",
+		"/home/peter/Math-Quizinator/app/views/problems/show.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/show.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/take.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/result.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/_form.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/edit.html.erb",
+		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
 		"/home/peter/Math-Quizinator/quiz/app/controllers/problems_controller.rb",
-		"/home/peter/Math-Quizinator/quiz/app/views/problems/new.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/controllers/exams_controller.rb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/index.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/_form.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/result.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/take.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/show.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/edit.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/show.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/_form.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/index.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/models/problem.rb",
+		"/home/peter/Math-Quizinator/quiz/app/models/exam.rb",
 		"/home/peter/Math-Quizinator/quiz/app/views/welcome/index.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/new.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/exams/edit.html.erb",
+		"/home/peter/Math-Quizinator/quiz/app/views/problems/new.html.erb",
+		"/home/peter/Math-Quizinator/quiz/db/migrate/20131212190824_create_exams_problems.rb",
+		"/home/peter/Math-Quizinator/quiz/app/models/a_quiz.rb",
 		"/home/peter/Math-Quizinator/quiz/app/views/layouts/application.html.erb",
 		"/home/peter/Math-Quizinator/quiz/app/views/problems/hew.html.erb",
-		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
-		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/peter/Math-Quizinator/quiz/Gemfile",
 		"/home/peter/Math-Quizinator/README.md",
 		"/home/peter/koans/about_strings.rb",
@@ -117,7 +143,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -131,6 +157,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"problem",
+			"Problem",
+			"problem",
+			"exams_problems",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
 			"post"
 		],
 		"highlight": true,
@@ -149,30 +188,30 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "quiz/app/views/problems/_form.html.erb",
+					"file": "app/views/exams/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 514,
+						"buffer_size": 836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21,
-								21
+								783,
+								783
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -182,51 +221,51 @@
 				},
 				{
 					"buffer": 1,
-					"file": "quiz/app/views/problems/edit.html.erb",
+					"file": "app/controllers/exams_controller.rb",
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 2276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31,
-								31
+								985,
+								985
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "quiz/app/views/problems/new.html.erb",
+					"file": "app/models/problem.rb",
 					"settings":
 					{
-						"buffer_size": 118,
+						"buffer_size": 181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								59,
-								59
+								176,
+								176
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -270,7 +309,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 221.0
+		"height": 27.0
 	},
 	"replace":
 	{
@@ -297,6 +336,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 172.0,
+	"side_bar_width": 179.0,
 	"status_bar_visible": true
 }
