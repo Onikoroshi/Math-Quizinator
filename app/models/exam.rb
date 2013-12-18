@@ -6,10 +6,28 @@ class Exam < ActiveRecord::Base
   accepts_nested_attributes_for :problems
 
   def problem_ids=(some_problem_ids)
-    @exam.problems.clear
+    self.problems.clear
     some_problem_ids.each {
       |prob_id|
-      @exam.problems << Problem.find(prob_id)
+      self.problems << Problem.find(prob_id)
     }
+  end
+
+  def score(some_answers)
+    results = []
+    score = 0
+
+    some_answers.each_with_index {
+      |ans, index|
+      prob = self.problems[index] # find the problem that goes with this answer
+      if ans == prob.answer
+        score += 1
+        results << [prob.question, prob.answer, false]
+      else
+        results << [prob.question, "You said: " + ans.to_s + "; should be: " + prob.answer.to_s, true]
+      end
+    }
+
+    return score, results
   end
 end
