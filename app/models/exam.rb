@@ -7,6 +7,10 @@ class Exam < ActiveRecord::Base
 
   def problem_ids=(some_problem_ids)
     self.problems.clear
+    if some_problem_ids == nil
+      return
+    end
+    
     some_problem_ids.each {
       |prob_id|
       self.problems << Problem.find(prob_id)

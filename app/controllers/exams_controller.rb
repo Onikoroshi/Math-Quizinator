@@ -7,11 +7,14 @@ class ExamsController < ApplicationController
     @exam = Exam.new(params[:exam].permit(:title, :problem_ids))
 
     # I couldn't figure out how to get Rails to automatically update the many-to-many relationship parameters, so I do it manually.
+    @exam.problem_ids = params[:exam][:problem_ids]
+=begin
     @exam.problems = []
     params[:exam][:problem_ids].each {
       |prob_id|
       @exam.problems << Problem.find(prob_id)
     }
+=end
     
     if @exam.save
       redirect_to @exam

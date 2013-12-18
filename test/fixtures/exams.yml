@@ -1,7 +1,1 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-<% 17.times do |n| %>
-exam_<%= n+1 %>:
-  title: Exam <%= n+1 %>
-  problems: <% n.times do |p_num| %>problem_<%= p_num+1 %>,<% end %> problem_<%= n+1 %>
-<% end %>

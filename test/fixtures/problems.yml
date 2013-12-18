@@ -1,7 +1,1 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-<% 17.times do |n| %>
-problem_<%= n+1 %>:
-  question: <%= n %> + <%= 2*n %>
-  answer: <%= n + (2*n) %>
-<% end %>
