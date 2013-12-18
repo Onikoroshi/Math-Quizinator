@@ -1,15 +1,24 @@
-<p>
-  <strong>Quiz Title:</strong>
-  <%= @exam.title %>
-</p>
+<h2><%= @exam.title %></h2>
 
-<strong>Questions in this Quiz:</strong>
-<ul>
-  <% @exam.problems.each do |prob| %>
-    <li><%= prob.question %> = <%= prob.answer %> | <%= link_to "Edit", edit_problem_path(prob) %></li>
+<h3>Questions in this Quiz:</h3>
+
+<table>
+  <tr>
+    <th>No.</th>
+    <th>Question</th>
+    <th>Answer</th>
+    <th></th>
+  </tr>
+
+  <% @exam.problems.each_with_index do |prob, index| %>
+    <tr>
+      <td><%= index+1 %>
+      <td><%= prob.question %></td>
+      <td><%= prob.answer %></td>
+      <td><%= link_to "Edit", edit_problem_path(prob) %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
 
-<%= link_to "Destroy this Quiz", exam_path(@exam), method: :delete, data: { confirm: "Are you sure?" } %><br />
-<%= link_to "Edit this Quiz", edit_exam_path(@exam) %><br />
-<%= link_to "See all the Quizzes", exams_path %>
+<h3><%= link_to "Edit this Quiz", edit_exam_path(@exam) %></h3>
+<h3><%= link_to "Destroy this Quiz", exam_path(@exam), method: :delete, data: { confirm: "Are you sure?" } %></h3>

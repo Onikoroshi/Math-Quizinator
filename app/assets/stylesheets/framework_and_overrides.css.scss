@@ -2,44 +2,70 @@
 @import "bootstrap";
 
 // make all images responsive by default
-img {
+img
+{
   @extend .img-responsive;
   margin: 0 auto;
-  }
+}
 // override for the 'Home' navigation link
-.navbar-brand {
+.navbar-brand
+{
   font-size: inherit;
-  }
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
-.column {
+.column
+{
   @extend .col-md-6;
   @extend .text-center;
-  }
-.form {
+}
+.form
+{
   @extend .col-md-6;
-  }
-.form-centered {
+}
+.form-centered
+{
   @extend .col-md-6;
   @extend .text-center;
-  }
-.submit {
+}
+.submit
+{
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
 // apply styles to HTML elements
 // to make views framework-neutral
-main {
+main
+{
   @extend .container;
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
-  }
-section {
+}
+section
+{
   @extend .row;
   margin-top: 20px;
-  }
+}
+td
+{
+  padding:15px;
+}
+tr.bold
+{
+  font-weight: bold;
+  color: red;
+}
+th
+{
+  padding: 5px;
+}
+div.error_explanation
+{
+  font-weight: bold;
+  color: red;
+}

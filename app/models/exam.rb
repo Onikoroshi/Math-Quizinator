@@ -22,9 +22,9 @@ class Exam < ActiveRecord::Base
       prob = self.problems[index] # find the problem that goes with this answer
       if ans == prob.answer
         score += 1
-        results << [prob.question, prob.answer, false]
+        results << [prob.question, prob.answer, "", false]
       else
-        results << [prob.question, "You said: " + ans.to_s + "; should be: " + prob.answer.to_s, true]
+        results << [prob.question, prob.answer, ans, true]
       end
     }
 
