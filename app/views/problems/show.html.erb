@@ -1,13 +1,9 @@
-<p>
-  <strong>Question:</strong>
-  <%= @problem.question %>
-</p>
+<h2>Question:</h2>
+<h3><%= @problem.question %></h3>
 
-<p>
-  <strong>Answer:</strong>
-  <%= @problem.answer %>
-</p>
+<h2>Answer:</h2>
+<h3><%= @problem.answer %></h3>
 
-<%= link_to "Create another Math Problem", new_problem_path %><br />
-<%= link_to "Edit this Math Problem", edit_problem_path(@problem) %><br />
-<%= link_to "See all the Math Problems", problems_path %>
+<br />
+<h4><%= link_to "Edit this Math Problem", edit_problem_path(@problem) %></h4>
+<h4><%= link_to "Create another Math Problem", new_problem_path %></h4>

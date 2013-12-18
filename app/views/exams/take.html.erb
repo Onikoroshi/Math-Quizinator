@@ -2,13 +2,23 @@
 <h2><%= @exam.title %></h2>
 
 <%= form_tag(result_exam_path, method: "post") do %>
-  <ol>
-    <% @exam.problems.each do |prob| %>
-      <li><%= label_tag prob.question %> = <%= text_field_tag 'answers[]' %></li>
+  <table>
+    <tr>
+      <th>No.</th>
+      <th>Question</th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <% @exam.problems.each_with_index do |prob, index| %>
+      <tr>
+        <td><%= index+1 %></td>
+        <td><%= label_tag prob.question %></td>
+        <td> = </td>
+        <td><%= text_field_tag 'answers[]' %></td>
+      </tr>
     <% end %>
-  </ol>
+  </table>
 
   <%= submit_tag("Submit!") %>
 <% end %>
-
-<%= link_to 'Back to Quiz List', exams_path %>

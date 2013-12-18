@@ -1,12 +1,23 @@
-<h1>All the Exams!</h1>
+<h1>All the Quizzes!</h1>
 
 </p>
-  <%= link_to "Create a new Quiz", new_exam_path %> |
-  <%= link_to "Home Page", root_path %>
+  <%= link_to "Create a new Quiz", new_exam_path %>
 </p>
 
-<ul>
-  <% @exams.each do |exam| %>
-    <li><%= link_to exam.title, exam_path(exam) %> | <%= pluralize(exam.problems.count, "Question") %> | <%= link_to "Take Quiz", take_exam_path(exam) %></li>
+<table>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @exams.each_with_index do |exam, index| %>
+    <tr>
+      <td><%= index+1 %></td>
+      <td><%= link_to exam.title, exam_path(exam) %></td>
+      <td><%= pluralize(exam.problems.count, "Question") %></td>
+      <td><%= link_to "Take Quiz", take_exam_path(exam) %></td>
+    </tr>
   <% end %>
-</ul>
+</table>

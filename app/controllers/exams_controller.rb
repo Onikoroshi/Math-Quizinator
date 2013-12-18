@@ -36,13 +36,14 @@ class ExamsController < ApplicationController
     @exam = Exam.find(params[:id])
 
     # I couldn't figure out how to get Rails to automatically update the many-to-many relationship parameters, so I do it manually.
+    @exam.problem_ids = params[:exam][:problem_ids]
 =begin    
     @exam.problems = []
     params[:exam][:problem_ids].each {
       |prob_id|
       @exam.problems << Problem.find(prob_id)
     }
-=end    
+=end
     
     # update the paramters of the exam object (as far as I can tell, the problem_attributes bit doesn't do anything)
     if @exam.update_attributes(params[:exam].permit(:title, :problem_ids))
@@ -68,19 +69,6 @@ class ExamsController < ApplicationController
   def result
     @exam = Exam.find(params[:id])
 
-    @results = [] # the view needs a set of results to display
-    @score = 0 # the view needs an overall score to display
-
-    # look at each answer submitted by the user, and save which answer number that was
-    params[:answers].each_with_index {
-      |ans, index|
-      prob = @exam.problems[index] # find the problem that goes with this answer
-      if ans == prob.answer
-        @score += 1
-        @results << [prob.question, prob.answer, false]
-      else
-        @results << [prob.question, "You said: " + ans.to_s + "; should be: " + prob.answer.to_s, true]
-      end
-    }
+    @score, @results = @exam.score(params[:answers])
   end
 end

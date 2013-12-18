@@ -1,23 +1,23 @@
 <h1>All the Math Problems!</h1>
 
-</p>
-  <%= link_to "Create a new Math Problem", new_problem_path %> |
-  <%= link_to "Home Page", root_path %>
-</p>
-<table border="1">
+<p><%= link_to "Create a new Math Problem", new_problem_path %></p>
+
+<table>
   <tr>
+    <th></th>
     <th>Question</th>
     <th>Answer</th>
     <th></th>
     <th></th>
   </tr>
 
-  <% @problems.each do |problem| %>
+  <% @problems.each_with_index do |problem, index| %>
     <tr>
-      <td style="padding-left: 2em; padding-right:2em;"><%= problem.question %></td>
-      <td style="padding-left: 2em; padding-right:2em;"><%= problem.answer %></td>
-      <td style="padding-left: 2em; padding-right:2em;"><%= link_to "Edit", edit_problem_path(problem) %></td>
-      <td style="padding-left: 2em; padding-right:2em;"><%= link_to "Destroy", problem_path(problem), method: :delete, data: { confirm: "Are you sure?" } %></td>
+      <td><%= index+1 %></td>
+      <td><%= problem.question %></td>
+      <td><%= problem.answer %></td>
+      <td><%= link_to "Edit", edit_problem_path(problem) %></td>
+      <td><%= link_to "Destroy", problem_path(problem), method: :delete, data: { confirm: "Are you sure?" } %></td>
     </tr>
   <% end %>
 </table>

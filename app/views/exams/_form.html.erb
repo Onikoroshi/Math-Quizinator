@@ -1,7 +1,7 @@
 <%= form_for @exam do |f| %>
   <% if @exam.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@exam.errors.count, "error") %> prevented this Math exam from being saved:</h2>
+    <div class="error_explanation">
+      <h3><%= pluralize(@exam.errors.count, "error") %> prevented this Quiz from being saved:</h3>
       <ul>
         <% @exam.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -10,20 +10,29 @@
     </div>
   <% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+  <h3><%= f.label :title %></h3>
+  <%= f.text_field :title %>
 
-  <h2>Available Problems:</h2>
-  <% Problem.all.each do |prob| %>
-    <%= f.fields_for "exam[problem_ids][]", prob do |builder| %>
-      <p>
-      <%= check_box_tag "exam[problem_ids][]", prob.id, @exam.problems.include?(prob) %>
-      <%= prob.question %> = <%= prob.answer %> | <%= link_to "Edit", edit_problem_path(prob) %>
-      </p>
+  <h3>Available Problems:</h3>
+  <table>
+    <tr>
+      <th>Include</th>
+      <th>Question</th>
+      <th>Answer</th>
+      <th></th>
+    </tr>
+
+    <% Problem.all.each do |prob| %>
+      <%= f.fields_for "exam[problem_ids][]", prob do |builder| %>
+        <tr>
+          <td><%= check_box_tag "exam[problem_ids][]", prob.id, @exam.problems.include?(prob) %></td>
+          <td><%= prob.question %></td>
+          <td><%= prob.answer %></td>
+          <td><%= link_to "Edit", edit_problem_path(prob) %></td>
+        </tr>
+      <% end %>
     <% end %>
-  <% end %>
+  </table>
 
   <p>
     <%= f.submit 'Submit' %>
