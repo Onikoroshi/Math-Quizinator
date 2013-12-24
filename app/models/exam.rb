@@ -5,33 +5,65 @@ class Exam < ActiveRecord::Base
 
   accepts_nested_attributes_for :problems
 
-  def problem_ids=(some_problem_ids)
-    self.problems.clear
-    if some_problem_ids == nil
-      return
+  class Result
+    def initialize(problem, user_answer)
+      @problem = problem
+      @given_answer = user_answer
     end
-    
-    some_problem_ids.each {
-      |prob_id|
-      self.problems << Problem.find(prob_id)
-    }
+
+    def worth
+      return @problem.worth
+    end
+
+    def score
+      return @problem.score(user_answer)
+    end
+
+    def question
+      return @problem.question
+    end
+
+    def correct_answer
+      return @problem.answer
+    end
+
+    def user_answer
+      return @given_answer
+    end
   end
 
-  def score(some_answers)
-    results = []
-    score = 0
+  class Reporter
+    def initialize(exam, user_answers)
+      @exam = exam
+      @results = []
 
-    some_answers.each_with_index {
-      |ans, index|
-      prob = self.problems[index] # find the problem that goes with this answer
-      if ans == prob.answer
-        score += 1
-        results << [prob.question, prob.answer, "", false]
-      else
-        results << [prob.question, prob.answer, ans, true]
-      end
-    }
+      @exam.problems.each {
+        |current_problem|
+        puts user_answers
+        @results << Result.new(current_problem, user_answers[current_problem.id.to_s])
+      }
+    end
 
-    return score, results
+    def score
+      return @results.inject(0) {
+        |score_so_far, current_result|
+        score_so_far + current_result.score
+      }
+    end
+
+    def total_possible
+      return @results.inject(0) {
+        |total_so_far, current_result|
+        total_so_far + current_result.worth
+      }
+    end
+
+    def results
+      return @results
+    end
+  end
+
+  def evaluate(user_answers)
+    return Reporter.new(self, user_answers)
   end
 end

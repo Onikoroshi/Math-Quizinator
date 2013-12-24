@@ -27618,3 +27618,2672 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-17 23:07:36 -08
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-17 23:07:36 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-19 11:57:46 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 777ms (Views: 756.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 11:57:47 -0800
+
+
+Started GET "/exams" for 127.0.0.1 at 2013-12-19 11:57:52 -0800
+Processing by ExamsController#index as HTML
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams"
+  [1m[36m (8.3ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 9]]
+  Rendered exams/index.html.erb within layouts/application (164.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 243ms (Views: 202.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/exams/5" for 127.0.0.1 at 2013-12-19 11:57:54 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mExam Load (0.3ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 5]]
+  Rendered exams/show.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/exams/5/edit" for 127.0.0.1 at 2013-12-19 11:57:55 -0800
+Processing by ExamsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 2 LIMIT 1  [["exam_id", 5]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 5 LIMIT 1[0m  [["exam_id", 5]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 7 LIMIT 1  [["exam_id", 5]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 9 LIMIT 1[0m  [["exam_id", 5]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 10 LIMIT 1  [["exam_id", 5]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 11 LIMIT 1[0m  [["exam_id", 5]]
+  Rendered exams/_form.html.erb (81.0ms)
+  Rendered exams/edit.html.erb within layouts/application (121.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 169.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/exams/5" for 127.0.0.1 at 2013-12-19 11:57:58 -0800
+Processing by ExamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vJl9ZcPxN0/zZ7oXWFc6P2AI62vPXzas9gdtEUtX54c=", "exam"=>{"title"=>"will this work?", "problem_ids"=>["5", "7", "9"]}, "commit"=>"Submit", "id"=>"5"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."id" IN (5, 7, 9)[0m
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "exams_problems" ("exam_id", "problem_id") VALUES (5, 9)
+  [1m[36m (198.3ms)[0m  [1mcommit transaction[0m
+Unpermitted parameters: problem_ids
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/exams/5
+Completed 302 Found in 206ms (ActiveRecord: 199.0ms)
+
+
+Started GET "/exams/5" for 127.0.0.1 at 2013-12-19 11:57:58 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 5]]
+  Rendered exams/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/exams/5/edit" for 127.0.0.1 at 2013-12-19 11:58:16 -0800
+Processing by ExamsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 2 LIMIT 1  [["exam_id", 5]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 5 LIMIT 1[0m  [["exam_id", 5]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 7 LIMIT 1  [["exam_id", 5]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 9 LIMIT 1[0m  [["exam_id", 5]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 10 LIMIT 1  [["exam_id", 5]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 11 LIMIT 1[0m  [["exam_id", 5]]
+  Rendered exams/_form.html.erb (11.6ms)
+  Rendered exams/edit.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 40.3ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/exams/5" for 127.0.0.1 at 2013-12-19 11:58:19 -0800
+Processing by ExamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vJl9ZcPxN0/zZ7oXWFc6P2AI62vPXzas9gdtEUtX54c=", "exam"=>{"title"=>"will this work?", "problem_ids"=>["5", "7", "9", "10"]}, "commit"=>"Submit", "id"=>"5"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "5"]]
+Unpermitted parameters: problem_ids
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/exams/5
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/exams/5" for 127.0.0.1 at 2013-12-19 11:58:19 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mExam Load (0.2ms)[0m  [1mSELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 5]]
+  Rendered exams/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 11:35:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 835ms (Views: 814.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 11:35:02 -0800
+
+
+Started GET "/exams" for 127.0.0.1 at 2013-12-24 11:35:04 -0800
+Processing by ExamsController#index as HTML
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams"
+  [1m[36m (6.4ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 9]]
+  Rendered exams/index.html.erb within layouts/application (117.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 170ms (Views: 132.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/exams/4" for 127.0.0.1 at 2013-12-24 11:35:05 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mExam Load (0.3ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  Rendered exams/show.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/exams/4/edit" for 127.0.0.1 at 2013-12-24 11:35:07 -0800
+Processing by ExamsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Exists (0.2ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 2 LIMIT 1  [["exam_id", 4]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 5 LIMIT 1[0m  [["exam_id", 4]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 7 LIMIT 1  [["exam_id", 4]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 9 LIMIT 1[0m  [["exam_id", 4]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 10 LIMIT 1  [["exam_id", 4]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 11 LIMIT 1[0m  [["exam_id", 4]]
+  Rendered exams/_form.html.erb (83.8ms)
+  Rendered exams/edit.html.erb within layouts/application (91.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 120.1ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/exams/4" for 127.0.0.1 at 2013-12-24 11:35:10 -0800
+Processing by ExamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLm91BUwt/hD8N2koDElI1Vm6YfS3vLPZbNlvd6nXyg=", "exam"=>{"title"=>"testing a quiz", "problem_ids"=>["2", "5", "7"]}, "commit"=>"Submit", "id"=>"4"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."id" IN (2, 5, 7)
+  [1m[36mProblem Load (0.0ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  [1m[35m (0.1ms)[0m  INSERT INTO "exams_problems" ("exam_id", "problem_id") VALUES (4, 7)
+  [1m[36m (163.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/exams/4
+Completed 302 Found in 171ms (ActiveRecord: 164.4ms)
+
+
+Started GET "/exams/4" for 127.0.0.1 at 2013-12-24 11:35:10 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  Rendered exams/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/exams/4/edit" for 127.0.0.1 at 2013-12-24 11:36:03 -0800
+Processing by ExamsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 2 LIMIT 1  [["exam_id", 4]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 5 LIMIT 1[0m  [["exam_id", 4]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 7 LIMIT 1  [["exam_id", 4]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 9 LIMIT 1[0m  [["exam_id", 4]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 10 LIMIT 1  [["exam_id", 4]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 11 LIMIT 1[0m  [["exam_id", 4]]
+  Rendered exams/_form.html.erb (34.1ms)
+  Rendered exams/edit.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 41.6ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/exams/4" for 127.0.0.1 at 2013-12-24 11:36:05 -0800
+Processing by ExamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLm91BUwt/hD8N2koDElI1Vm6YfS3vLPZbNlvd6nXyg=", "exam"=>{"title"=>"testing a quiz", "problem_ids"=>["2", "7"]}, "commit"=>"Submit", "id"=>"4"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."id" IN (2, 7)
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  [1m[35m (0.1ms)[0m  DELETE FROM "exams_problems" WHERE "exams_problems"."exam_id" = 4 AND "exams_problems"."problem_id" IN (5)
+  [1m[36m (153.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/exams/4
+Completed 302 Found in 160ms (ActiveRecord: 154.3ms)
+
+
+Started GET "/exams/4" for 127.0.0.1 at 2013-12-24 11:36:05 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  Rendered exams/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/exams" for 127.0.0.1 at 2013-12-24 11:36:08 -0800
+Processing by ExamsController#index as HTML
+  [1m[35mExam Load (0.3ms)[0m  SELECT "exams".* FROM "exams"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 8]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 9]]
+  Rendered exams/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/exams/new" for 127.0.0.1 at 2013-12-24 11:36:11 -0800
+Processing by ExamsController#new as HTML
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered exams/_form.html.erb (29.9ms)
+  Rendered exams/new.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/exams" for 127.0.0.1 at 2013-12-24 11:36:22 -0800
+Processing by ExamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLm91BUwt/hD8N2koDElI1Vm6YfS3vLPZbNlvd6nXyg=", "exam"=>{"title"=>"testing something else", "problem_ids"=>["5", "9", "11"]}, "commit"=>"Submit"}
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."id" IN (5, 9, 11)[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (22.1ms)[0m  [1mINSERT INTO "exams" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 24 Dec 2013 19:36:22 UTC +00:00], ["title", "testing something else"], ["updated_at", Tue, 24 Dec 2013 19:36:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  INSERT INTO "exams_problems" ("exam_id", "problem_id") VALUES (13, 5)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "exams_problems" ("exam_id", "problem_id") VALUES (13, 9)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "exams_problems" ("exam_id", "problem_id") VALUES (13, 11)
+  [1m[36m (215.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/exams/13
+Completed 302 Found in 247ms (ActiveRecord: 238.7ms)
+
+
+Started GET "/exams/13" for 127.0.0.1 at 2013-12-24 11:36:22 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 13]]
+  Rendered exams/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/problems" for 127.0.0.1 at 2013-12-24 11:36:31 -0800
+Processing by ProblemsController#index as HTML
+  [1m[35mProblem Load (0.3ms)[0m  SELECT "problems".* FROM "problems"
+  Rendered problems/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/exams" for 127.0.0.1 at 2013-12-24 11:36:32 -0800
+Processing by ExamsController#index as HTML
+  [1m[36mExam Load (0.3ms)[0m  [1mSELECT "exams".* FROM "exams"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 8]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 9]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 13]]
+  Rendered exams/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/exams/13" for 127.0.0.1 at 2013-12-24 11:36:36 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 13]]
+  Rendered exams/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/exams/13/edit" for 127.0.0.1 at 2013-12-24 11:36:37 -0800
+Processing by ExamsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems"[0m
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 2 LIMIT 1  [["exam_id", 13]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 5 LIMIT 1[0m  [["exam_id", 13]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 7 LIMIT 1  [["exam_id", 13]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 9 LIMIT 1[0m  [["exam_id", 13]]
+  [1m[35mProblem Exists (0.1ms)[0m  SELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 10 LIMIT 1  [["exam_id", 13]]
+  [1m[36mProblem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ? AND "problems"."id" = 11 LIMIT 1[0m  [["exam_id", 13]]
+  Rendered exams/_form.html.erb (10.8ms)
+  Rendered exams/edit.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/exams/13" for 127.0.0.1 at 2013-12-24 11:36:45 -0800
+Processing by ExamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLm91BUwt/hD8N2koDElI1Vm6YfS3vLPZbNlvd6nXyg=", "exam"=>{"title"=>"omg it worked!", "problem_ids"=>["5", "9", "10", "11"]}, "commit"=>"Submit", "id"=>"13"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."id" IN (5, 9, 10, 11)
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 13]]
+  [1m[35m (0.2ms)[0m  INSERT INTO "exams_problems" ("exam_id", "problem_id") VALUES (13, 10)
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "exams" SET "title" = ?, "updated_at" = ? WHERE "exams"."id" = 13[0m  [["title", "omg it worked!"], ["updated_at", Tue, 24 Dec 2013 19:36:45 UTC +00:00]]
+  [1m[35m (203.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/exams/13
+Completed 302 Found in 211ms (ActiveRecord: 204.2ms)
+
+
+Started GET "/exams/13" for 127.0.0.1 at 2013-12-24 11:36:45 -0800
+Processing by ExamsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mExam Load (0.1ms)[0m  [1mSELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 13]]
+  Rendered exams/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 11:58:17 -0800
+
+
+Started GET "/exams" for 127.0.0.1 at 2013-12-24 14:22:31 -0800
+Processing by ExamsController#index as HTML
+  [1m[36mExam Load (0.2ms)[0m  [1mSELECT "exams".* FROM "exams"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 6]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 8]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 9]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 13]]
+  Rendered exams/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:22:33 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.3ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (35.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (no implicit conversion of Fixnum into String):
+    15:         <td><%= index+1 %></td>
+    16:         <td><%= label_tag prob.question %></td>
+    17:         <td> = </td>
+    18:         <td><%= text_field_tag "answers[" + prob.id + "]" %></td>
+    19:       </tr>
+    20:     <% end %>
+    21:   </table>
+  app/views/exams/take.html.erb:18:in `+'
+  app/views/exams/take.html.erb:18:in `block (2 levels) in _app_views_exams_take_html_erb___2953907638876100741_26194620'
+  app/views/exams/take.html.erb:13:in `block in _app_views_exams_take_html_erb___2953907638876100741_26194620'
+  app/views/exams/take.html.erb:4:in `_app_views_exams_take_html_erb___2953907638876100741_26194620'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.9ms)
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:22:33 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (no implicit conversion of Fixnum into String):
+    15:         <td><%= index+1 %></td>
+    16:         <td><%= label_tag prob.question %></td>
+    17:         <td> = </td>
+    18:         <td><%= text_field_tag "answers[" + prob.id + "]" %></td>
+    19:       </tr>
+    20:     <% end %>
+    21:   </table>
+  app/views/exams/take.html.erb:18:in `+'
+  app/views/exams/take.html.erb:18:in `block (2 levels) in _app_views_exams_take_html_erb___2953907638876100741_70330998918700'
+  app/views/exams/take.html.erb:13:in `block in _app_views_exams_take_html_erb___2953907638876100741_70330998918700'
+  app/views/exams/take.html.erb:4:in `_app_views_exams_take_html_erb___2953907638876100741_70330998918700'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:22:48 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:22:53 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `score' for nil:NilClass):
+    1: <h1>Here are your results!</h1>
+    2: <h2>for taking Quiz "<%= @exam.title %>"</h2>
+    3: 
+    4: <h3>You got <%= @exam_reporter.score %> out of <%= @exam_reporter.total_possible %>!</h3>
+    5: 
+    6: <table>
+    7:   <tr>
+  app/views/exams/result.html.erb:4:in `_app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:23:36 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `user_answer' for #<Exam::Result:0x007fee6440a4e8>):
+    1: <h1>Here are your results!</h1>
+    2: <h2>for taking Quiz "<%= @exam.title %>"</h2>
+    3: 
+    4: <h3>You got <%= @exam_reporter.score %> out of <%= @exam_reporter.total_possible %>!</h3>
+    5: 
+    6: <table>
+    7:   <tr>
+  app/models/exam.rb:19:in `score'
+  app/models/exam.rb:50:in `block in score'
+  app/models/exam.rb:48:in `each'
+  app/models/exam.rb:48:in `inject'
+  app/models/exam.rb:48:in `score'
+  app/views/exams/result.html.erb:4:in `_app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:23:56 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `+' for #<Exam::Result:0x007fee6c499e38>):
+    1: <h1>Here are your results!</h1>
+    2: <h2>for taking Quiz "<%= @exam.title %>"</h2>
+    3: 
+    4: <h3>You got <%= @exam_reporter.score %> out of <%= @exam_reporter.total_possible %>!</h3>
+    5: 
+    6: <table>
+    7:   <tr>
+  app/models/exam.rb:50:in `block in score'
+  app/models/exam.rb:48:in `each'
+  app/models/exam.rb:48:in `inject'
+  app/models/exam.rb:48:in `score'
+  app/views/exams/result.html.erb:4:in `_app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:25:08 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `problem' for #<Exam::Result:0x007fee5c0b8400>):
+    14:   <% @exam_reporter.results.each_with_index do |current_result, index| %>
+    15:     <% if current_result.score == 0 %><tr class="bold"><% else %><tr><% end %>
+    16:       <td><%= index+1 %></td>
+    17:       <td><%= current_result.question %></td>
+    18:       <td><%= current_result.correct_answer %></td>
+    19:       <td><%= current_result.given_answer %></td>
+    20:     </tr>
+  app/models/exam.rb:23:in `question'
+  app/views/exams/result.html.erb:17:in `block in _app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+  app/views/exams/result.html.erb:14:in `each'
+  app/views/exams/result.html.erb:14:in `each_with_index'
+  app/views/exams/result.html.erb:14:in `_app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.7ms)
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:25:39 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `given_answer' for #<Exam::Result:0x007fee6c4e7778>):
+    16:       <td><%= index+1 %></td>
+    17:       <td><%= current_result.question %></td>
+    18:       <td><%= current_result.correct_answer %></td>
+    19:       <td><%= current_result.given_answer %></td>
+    20:     </tr>
+    21:   <% end %>
+    22: </table>
+  app/views/exams/result.html.erb:19:in `block in _app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+  app/views/exams/result.html.erb:14:in `each'
+  app/views/exams/result.html.erb:14:in `each_with_index'
+  app/views/exams/result.html.erb:14:in `_app_views_exams_result_html_erb___1031005699680165932_70331000454920'
+
+
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/peter/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:51 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:25:58 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:26:01 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:26:02 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 37.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:35 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"0", "5"=>"1"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:40 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:27:41 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:32 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"6", "5"=>"6"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:35 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:38 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"0"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:29:42 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:26 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"5", "5"=>"5"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:33:29 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:50 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"6", "5"=>"6"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:39:56 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 15.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:40:58 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"6", "5"=>"6"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:02 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:06 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"7", "5"=>"0"}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:07 -0800
+
+
+Started GET "/exams/7/take" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+Processing by ExamsController#take as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mExam Load (0.2ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/take.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:20 -0800
+
+
+Started POST "/exams/7/result" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+Processing by ExamsController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYml+K0BoZ2hH3U+/K8D6O/U6sWnlxkx7WsLD93J2sk=", "answers"=>{"2"=>"", "5"=>""}, "commit"=>"Submit!", "id"=>"7"}
+  [1m[35mExam Load (0.1ms)[0m  SELECT "exams".* FROM "exams" WHERE "exams"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  Rendered exams/result.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:23 -0800
+
+
+Started GET "/exams" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+Processing by ExamsController#index as HTML
+  [1m[35mExam Load (0.3ms)[0m  SELECT "exams".* FROM "exams"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 7]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?[0m  [["exam_id", 9]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "problems" INNER JOIN "exams_problems" ON "problems"."id" = "exams_problems"."problem_id" WHERE "exams_problems"."exam_id" = ?  [["exam_id", 13]]
+  Rendered exams/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/framework_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/problems.css?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:24 -0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/problems.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-24 14:41:25 -0800

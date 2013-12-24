@@ -4,18 +4,8 @@ class ExamsController < ApplicationController
   end
 
   def create
-    @exam = Exam.new(params[:exam].permit(:title, :problem_ids))
+    @exam = Exam.new(params[:exam].permit(:title, problem_ids: []))
 
-    # I couldn't figure out how to get Rails to automatically update the many-to-many relationship parameters, so I do it manually.
-    @exam.problem_ids = params[:exam][:problem_ids]
-=begin
-    @exam.problems = []
-    params[:exam][:problem_ids].each {
-      |prob_id|
-      @exam.problems << Problem.find(prob_id)
-    }
-=end
-    
     if @exam.save
       redirect_to @exam
     else
@@ -24,7 +14,7 @@ class ExamsController < ApplicationController
   end
 
   def show
-    @exam = Exam.find(params[:id])
+    @exam = current_exam(params)
   end
 
   def index
@@ -32,24 +22,13 @@ class ExamsController < ApplicationController
   end
 
   def edit
-    @exam = Exam.find(params[:id])
+    @exam = current_exam(params)
   end
 
   def update
-    @exam = Exam.find(params[:id])
+    @exam = current_exam(params)
 
-    # I couldn't figure out how to get Rails to automatically update the many-to-many relationship parameters, so I do it manually.
-    @exam.problem_ids = params[:exam][:problem_ids]
-=begin    
-    @exam.problems = []
-    params[:exam][:problem_ids].each {
-      |prob_id|
-      @exam.problems << Problem.find(prob_id)
-    }
-=end
-    
-    # update the paramters of the exam object (as far as I can tell, the problem_attributes bit doesn't do anything)
-    if @exam.update_attributes(params[:exam].permit(:title, :problem_ids))
+    if @exam.update_attributes(params[:exam].permit(:title, problem_ids: []))
       redirect_to @exam
     else
       render 'edit'
@@ -57,21 +36,26 @@ class ExamsController < ApplicationController
   end
 
   def destroy
-    @exam = Exam.find(params[:id]) # find the exam from the given parameters
-    @exam.destroy # remove it from the database
+    @exam = current_exam(params)
+    @exam.destroy
 
-    redirect_to exams_path # go back to the master list of exams
+    redirect_to exams_path
   end
 
   # As a Student, take an existing exam
   def take
-    @exam = Exam.find(params[:id])
+    @exam = current_exam(params)
   end
 
   # As a Student, see what score you got on the exam you just took
   def result
-    @exam = Exam.find(params[:id])
+    @exam = current_exam(params)
 
-    @score, @results = @exam.score(params[:answers])
+    @exam_reporter = @exam.evaluate(params[:answers])
+  end
+
+  private
+  def current_exam(parameters)
+    return Exam.find(parameters[:id])
   end
 end

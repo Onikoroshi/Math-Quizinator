@@ -3,15 +3,31 @@
 	{
 		"selected_items":
 		[
+			[
+				"redirect",
+				"redirect_to"
+			],
+			[
+				"invalid",
+				"invalid_problem"
+			],
+			[
+				"attr",
+				"attributes_for"
+			],
+			[
+				"Facto",
+				"FactoryGirl"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/views/exams/_form.html.erb",
+			"file": "app/models/exam.rb",
 			"settings":
 			{
-				"buffer_size": 836,
+				"buffer_size": 799,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,15 +35,7 @@
 			"file": "app/controllers/exams_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2276,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/problem.rb",
-			"settings":
-			{
-				"buffer_size": 181,
+				"buffer_size": 1856,
 				"line_ending": "Unix"
 			}
 		}
@@ -47,7 +55,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 54.0
 	},
 	"distraction_free":
 	{
@@ -60,20 +68,41 @@
 	},
 	"file_history":
 	[
-		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
-		"/home/peter/Math-Quizinator/app/models/problem.rb",
-		"/home/peter/Math-Quizinator/app/models/exam.rb",
-		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
+		"/home/peter/Math-Quizinator/spec/controllers/problems_controller_spec.rb",
+		"/home/peter/Math-Quizinator/spec/controllers/exams_controller_spec.rb",
 		"/home/peter/Math-Quizinator/app/controllers/exams_controller.rb",
+		"/home/peter/Math-Quizinator/app/models/exam.rb",
+		"/home/peter/Math-Quizinator/spec/factories/exams.rb",
+		"/home/peter/Math-Quizinator/spec/factories/problems.rb",
+		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
+		"/home/peter/Math-Quizinator/spec/models/problem_spec.rb",
+		"/home/peter/Math-Quizinator/test/fixtures/problems.yml",
+		"/home/peter/Math-Quizinator/test/fixtures/exams.yml",
+		"/home/peter/Math-Quizinator/spec/models/exam_spec.rb",
+		"/home/peter/Math-Quizinator/app/models/problem.rb",
+		"/home/peter/Math-Quizinator/config/application.rb",
+		"/home/peter/Math-Quizinator/.rspec",
+		"/home/peter/Math-Quizinator/spec/spec_helper.rb",
+		"/home/peter/Math-Quizinator/test/controllers/problems_controller_test.rb",
+		"/home/peter/Math-Quizinator/Gemfile",
+		"/home/peter/Math-Quizinator/test/models/exam_test.rb",
+		"/home/peter/Math-Quizinator/test/models/problem_test.rb",
 		"/home/peter/Math-Quizinator/app/views/problems/show.html.erb",
-		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
-		"/home/peter/Math-Quizinator/app/views/exams/show.html.erb",
+		"/home/peter/Math-Quizinator/app/assets/stylesheets/framework_and_overrides.css.scss",
+		"/home/peter/Math-Quizinator/app/views/problems/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/edit.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/take.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/show.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/result.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/new.html.erb",
-		"/home/peter/Math-Quizinator/app/views/exams/index.html.erb",
-		"/home/peter/Math-Quizinator/app/views/exams/_form.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/edit.html.erb",
+		"/home/peter/Math-Quizinator/app/views/layouts/_navigation.html.erb",
+		"/home/peter/Math-Quizinator/app/views/layouts/_navigation_links.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/_form.html.erb",
+		"/home/peter/Math-Quizinator/app/views/welcome/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
 		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
 		"/home/peter/Math-Quizinator/quiz/app/controllers/problems_controller.rb",
@@ -160,6 +189,28 @@
 			"problem",
 			"Problem",
 			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"Problem",
+			"problem",
+			"contact",
+			"FactoryGirl",
+			"to_s",
+			"actual_results",
+			"actual_score",
+			"h3",
+			"li",
+			"ul",
+			"ol",
+			"problem",
+			"Problem",
+			"problem",
 			"exams_problems",
 			"problem",
 			"Problem",
@@ -193,23 +244,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/exams/_form.html.erb",
+					"file": "app/models/exam.rb",
 					"settings":
 					{
-						"buffer_size": 836,
+						"buffer_size": 799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								783,
-								783
+								299,
+								299
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -224,15 +275,15 @@
 					"file": "app/controllers/exams_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2276,
+						"buffer_size": 1856,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								985,
-								985
+								632,
+								632
 							]
 						],
 						"settings":
@@ -242,33 +293,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 459.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models/problem.rb",
-					"settings":
-					{
-						"buffer_size": 181,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 204.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -1,7 +1,7 @@
 <h1>Here are your results!</h1>
 <h2>for taking Quiz "<%= @exam.title %>"</h2>
 
-<h3>You got <%= @score %> out of <%= @results.length %>!</h3>
+<h3>You got <%= @exam_reporter.score %> out of <%= @exam_reporter.total_possible %>!</h3>
 
 <table>
   <tr>
@@ -11,12 +11,12 @@
     <th>Your Answer</th>
   </tr>
 
-  <% @results.each_with_index do |quest, index| %>
-    <% if quest[3] %><tr class="bold"><% else %><tr><% end %>
+  <% @exam_reporter.results.each_with_index do |current_result, index| %>
+    <% if current_result.score == 0 %><tr class="bold"><% else %><tr><% end %>
       <td><%= index+1 %></td>
-      <td><%= quest[0] %></td>
-      <td><%= quest[1] %></td>
-      <td><%= quest[2] %></td>
+      <td><%= current_result.question %></td>
+      <td><%= current_result.correct_answer %></td>
+      <td><%= current_result.user_answer %></td>
     </tr>
   <% end %>
 </table>
