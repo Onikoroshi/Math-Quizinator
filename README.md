@@ -20,8 +20,8 @@ Core Features:
 - [implemented] When a Quiz is submitted, a Score is given, and the wrong answers are highlighted. The Student can then take the Quiz again.
 
 Prioritized Additional Features:
+- [implemented] Teachers can use specific criteria to create random Math Problems.
 - Authentication for Students and Teachers.
 - Persistence for Students and Teachers. Students have a database of completed Quizzes, Teachers have a database of Students and another of Quizzes they have created.
 - Add Subject Tags to Math Problems (eg Addition, Subtraction, Fractions, etc).
 - Allow Teachers to generate randomized Quizzes.
-- Teachers can use specific criteria to create random Math Problems.
