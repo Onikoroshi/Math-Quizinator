@@ -5,6 +5,10 @@ class Exam < ActiveRecord::Base
 
   accepts_nested_attributes_for :problems
 
+  def operators
+    ["+", "-", "*"]
+  end
+
   class Result
     def initialize(problem, user_answer)
       @problem = problem
@@ -65,5 +69,20 @@ class Exam < ActiveRecord::Base
 
   def evaluate(user_answers)
     return Reporter.new(self, user_answers)
+  end
+
+  def generate_problems(number_of_problems, number_of_operands, operand_min, operand_max, operators)
+    rng = Random.new
+    number_of_problems.times {
+      expression = rng.rand(operand_min..operand_max).to_s
+      (number_of_operands-1).times {
+        current_operand = rng.rand(operand_min..operand_max).to_s
+        current_operator = operators.sample
+        expression += " " + current_operator + " " + current_operand
+      }
+
+      evaluated = eval expression
+      self.problems << Problem.new({question: expression, answer: evaluated})
+    }
   end
 end

@@ -7,6 +7,8 @@ class ExamsController < ApplicationController
     @exam = Exam.new(params[:exam].permit(:title, problem_ids: []))
 
     if @exam.save
+      @exam.generate_problems(params[:exam][:number_of_problems].to_i, params[:exam][:number_of_operands].to_i, params[:exam][:operand_min].to_i, params[:exam][:operand_max].to_i, params[:exam][:chosen_operators])
+      @exam.save
       redirect_to @exam
     else
       render 'new'
@@ -29,6 +31,8 @@ class ExamsController < ApplicationController
     @exam = current_exam(params)
 
     if @exam.update_attributes(params[:exam].permit(:title, problem_ids: []))
+      @exam.generate_problems(params[:exam][:number_of_problems].to_i, params[:exam][:number_of_operands].to_i, params[:exam][:operand_min].to_i, params[:exam][:operand_max].to_i, params[:exam][:chosen_operators])
+      @exam.save
       redirect_to @exam
     else
       render 'edit'
