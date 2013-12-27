@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"current_",
+				"current_operator"
+			],
+			[
+				"number",
+				"number_of_operands"
+			],
+			[
+				"text_",
+				"text_field_tag"
+			],
+			[
+				"number_of",
+				"number_of_problems"
+			],
+			[
+				"res",
+				"result_1"
+			],
+			[
 				"redirect",
 				"redirect_to"
 			],
@@ -24,42 +44,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/exam.rb",
+			"file": "lib/user_sanitizer.rb",
 			"settings":
 			{
-				"buffer_size": 1288,
+				"buffer_size": 304,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/models/exam_spec.rb",
+			"file": "app/views/devise/registrations/edit.html.erb",
 			"settings":
 			{
-				"buffer_size": 1050,
+				"buffer_size": 1245,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/models/reporter_spec.rb",
+			"file": "app/views/devise/registrations/new.html.erb",
 			"settings":
 			{
-				"buffer_size": 51,
+				"buffer_size": 604,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/factories/reporters.rb",
+			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 96,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/factories/exams.rb",
-			"settings":
-			{
-				"buffer_size": 193,
+				"buffer_size": 952,
 				"line_ending": "Unix"
 			}
 		}
@@ -92,26 +104,51 @@
 	},
 	"file_history":
 	[
-		"/home/peter/Math-Quizinator/spec/models/problem_spec.rb",
+		"/home/peter/Math-Quizinator/config/initializers/user_sanitizer.rb",
+		"/home/peter/Math-Quizinator/app/controllers/application_controller.rb",
+		"/home/peter/Math-Quizinator/lib/user_sanitizer.rb",
+		"/home/peter/Math-Quizinator/config/application.rb",
+		"/home/peter/Math-Quizinator/app/views/common/_session.html.erb",
 		"/home/peter/Math-Quizinator/app/models/problem.rb",
+		"/home/peter/Math-Quizinator/app/models/user.rb",
+		"/home/peter/Math-Quizinator/config/initializers/devise.rb",
+		"/home/peter/Math-Quizinator/app/views/devise/sessions/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/devise/registrations/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/devise/registrations/edit.html.erb",
+		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
+		"/home/peter/Math-Quizinator/app/controllers/exams_controller.rb",
+		"/home/peter/Math-Quizinator/app/views/User/registrations/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/User/sessions/new.html.erb",
+		"/home/peter/Math-Quizinator/app/views/layouts/_messages.html.erb",
+		"/home/peter/Math-Quizinator/app/views/layouts/application.html.erb",
+		"/home/peter/Math-Quizinator/app/views/layouts/_navigation.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/_form.html.erb",
+		"/home/peter/Math-Quizinator/tmp/try_stuff.rb",
+		"/home/peter/Math-Quizinator/app/models/exam.rb",
+		"/home/peter/Math-Quizinator/Gemfile",
+		"/home/peter/Math-Quizinator/config/environments/development.rb",
+		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
+		"/home/peter/Math-Quizinator/app/views/exams/index.html.erb",
+		"/home/peter/Math-Quizinator/spec/factories/problems.rb",
+		"/home/peter/Math-Quizinator/app/controllers/evaluate_controller.rb",
+		"/home/peter/Math-Quizinator/app/controllers/concerns/evaluate_controller",
 		"/home/peter/Math-Quizinator/spec/factories/exams.rb",
+		"/home/peter/Math-Quizinator/spec/factories/results.rb",
+		"/home/peter/Math-Quizinator/spec/factories/reporters.rb",
+		"/home/peter/Math-Quizinator/spec/models/result_spec.rb",
+		"/home/peter/Math-Quizinator/spec/models/reporter_spec.rb",
+		"/home/peter/Math-Quizinator/spec/models/exam_spec.rb",
+		"/home/peter/Math-Quizinator/spec/models/problem_spec.rb",
 		"/home/peter/Math-Quizinator/app/views/exams/result.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/take.html.erb",
-		"/home/peter/Math-Quizinator/app/controllers/exams_controller.rb",
 		"/home/peter/Math-Quizinator/.git/info/exclude",
 		"/home/peter/Math-Quizinator/spec/controllers/problems_controller_spec.rb",
 		"/home/peter/Math-Quizinator/spec/controllers/exams_controller_spec.rb",
-		"/home/peter/Math-Quizinator/app/models/exam.rb",
-		"/home/peter/Math-Quizinator/spec/factories/problems.rb",
-		"/home/peter/Math-Quizinator/app/controllers/problems_controller.rb",
 		"/home/peter/Math-Quizinator/test/fixtures/problems.yml",
 		"/home/peter/Math-Quizinator/test/fixtures/exams.yml",
-		"/home/peter/Math-Quizinator/spec/models/exam_spec.rb",
-		"/home/peter/Math-Quizinator/config/application.rb",
 		"/home/peter/Math-Quizinator/.rspec",
 		"/home/peter/Math-Quizinator/spec/spec_helper.rb",
 		"/home/peter/Math-Quizinator/test/controllers/problems_controller_test.rb",
-		"/home/peter/Math-Quizinator/Gemfile",
 		"/home/peter/Math-Quizinator/test/models/exam_test.rb",
 		"/home/peter/Math-Quizinator/test/models/problem_test.rb",
 		"/home/peter/Math-Quizinator/app/views/problems/show.html.erb",
@@ -121,13 +158,9 @@
 		"/home/peter/Math-Quizinator/app/views/exams/show.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/new.html.erb",
 		"/home/peter/Math-Quizinator/app/views/exams/edit.html.erb",
-		"/home/peter/Math-Quizinator/app/views/layouts/_navigation.html.erb",
 		"/home/peter/Math-Quizinator/app/views/layouts/_navigation_links.html.erb",
 		"/home/peter/Math-Quizinator/app/views/problems/_form.html.erb",
-		"/home/peter/Math-Quizinator/app/views/exams/_form.html.erb",
 		"/home/peter/Math-Quizinator/app/views/welcome/index.html.erb",
-		"/home/peter/Math-Quizinator/app/views/exams/index.html.erb",
-		"/home/peter/Math-Quizinator/app/views/problems/index.html.erb",
 		"/home/peter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/peter/Math-Quizinator/quiz/config/routes.rb",
 		"/home/peter/Math-Quizinator/quiz/app/controllers/problems_controller.rb",
@@ -201,7 +234,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/home/peter/Math-Quizinator"
@@ -272,84 +305,82 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/exam.rb",
+					"file": "lib/user_sanitizer.rb",
 					"settings":
 					{
-						"buffer_size": 1288,
+						"buffer_size": 304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								933,
-								933
+								304,
+								304
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 357.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "spec/models/exam_spec.rb",
+					"file": "app/views/devise/registrations/edit.html.erb",
 					"settings":
 					{
-						"buffer_size": 1050,
+						"buffer_size": 1245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								866,
-								866
+								746,
+								746
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 51.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "spec/models/reporter_spec.rb",
+					"file": "app/views/devise/registrations/new.html.erb",
 					"settings":
 					{
-						"buffer_size": 51,
+						"buffer_size": 604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								603,
+								603
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -359,49 +390,25 @@
 				},
 				{
 					"buffer": 3,
-					"file": "spec/factories/reporters.rb",
+					"file": "app/controllers/application_controller.rb",
 					"settings":
 					{
-						"buffer_size": 96,
+						"buffer_size": 952,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								86,
-								86
+								952,
+								952
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "spec/factories/exams.rb",
-					"settings":
-					{
-						"buffer_size": 193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
