@@ -5,7 +5,7 @@ class Exam < ActiveRecord::Base
 
   accepts_nested_attributes_for :problems
 
-  def operators
+  def possible_operators
     ["+", "-", "*"]
   end
 
@@ -77,7 +77,7 @@ class Exam < ActiveRecord::Base
       expression = rng.rand(operand_min..operand_max).to_s
       (number_of_operands-1).times {
         current_operand = rng.rand(operand_min..operand_max).to_s
-        current_operator = operators.sample
+        current_operator = possible_operators.sample
         expression += " " + current_operator + " " + current_operand
       }
 

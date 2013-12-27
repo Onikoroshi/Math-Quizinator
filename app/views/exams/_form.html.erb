@@ -22,7 +22,7 @@
   <%= text_field_tag 'exam[operand_min]' %> to <%= text_field_tag 'exam[operand_max]' %>
 
   <h3>Which Operators do you want included?</h3>
-  <% @exam.operators.each do |operator| %>
+  <% @exam.possible_operators.each do |operator| %>
     <%= check_box_tag "exam[chosen_operators][]", operator %>
     <%= operator %><br />
   <% end %>
