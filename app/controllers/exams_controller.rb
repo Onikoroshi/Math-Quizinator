@@ -1,4 +1,5 @@
 class ExamsController < ApplicationController
+  before_filter :authorize_teacher!, :except => [:index, :show, :take, :result]
   def new
     @exam = Exam.new
   end

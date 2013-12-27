@@ -1,4 +1,5 @@
 class ProblemsController < ApplicationController
+  before_filter :authorize_teacher!
   def new
     @problem = Problem.new
   end
