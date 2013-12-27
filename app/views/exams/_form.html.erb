@@ -13,7 +13,21 @@
   <h3><%= f.label :title %></h3>
   <%= f.text_field :title %>
 
-  <h3>Available Problems:</h3>
+  <h2>Create Randomized problems for this Quiz:</h2>
+  <strong>How many problems would you like to generate?</strong>
+  <%= text_field_tag 'exam[number_of_problems]' %><br />
+  <strong>How many Operands should each problem have?</strong>
+  <%= text_field_tag 'exam[number_of_operands]' %><br />
+  <strong>What Range should each Operand fall in?</strong>
+  <%= text_field_tag 'exam[operand_min]' %> to <%= text_field_tag 'exam[operand_max]' %>
+
+  <h3>Which Operators do you want included?</h3>
+  <% @exam.possible_operators.each do |operator| %>
+    <%= check_box_tag "exam[chosen_operators][]", operator %>
+    <%= operator %><br />
+  <% end %>
+
+  <h2>Choose from Available Problems:</h2>
   <table>
     <tr>
       <th>Include</th>

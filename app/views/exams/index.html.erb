@@ -10,6 +10,7 @@
     <th>Title</th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
   <% @exams.each_with_index do |exam, index| %>
@@ -18,6 +19,7 @@
       <td><%= link_to exam.title, exam_path(exam) %></td>
       <td><%= pluralize(exam.problems.count, "Question") %></td>
       <td><%= link_to "Take Quiz", take_exam_path(exam) %></td>
+      <td><%= link_to "Destroy", exam_path(exam), method: :delete %></td>
     </tr>
   <% end %>
 </table>

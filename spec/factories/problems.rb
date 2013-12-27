@@ -2,8 +2,9 @@
 
 FactoryGirl.define do
   factory :problem do |f|
-    a = Random.rand(1..20)
-    b = Random.rand(1..20)
+    rng = Random.new
+    a = rng.rand(1..20)
+    b = rng.rand(1..20)
     f.question {a.to_s + " + " + b.to_s}
     f.answer {(a+b).to_s}
   end
