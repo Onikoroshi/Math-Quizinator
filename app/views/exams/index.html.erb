@@ -1,8 +1,10 @@
 <h1>All the Quizzes!</h1>
 
+<% if user_signed_in? && current_user.is_teacher %>
 </p>
   <%= link_to "Create a new Quiz", new_exam_path %>
 </p>
+<% end %>
 
 <table>
   <tr>
@@ -16,10 +18,10 @@
   <% @exams.each_with_index do |exam, index| %>
     <tr>
       <td><%= index+1 %></td>
-      <td><%= link_to exam.title, exam_path(exam) %></td>
-      <td><%= pluralize(exam.problems.count, "Question") %></td>
+      <td><% if user_signed_in? && current_user.is_teacher %><%= link_to exam.title, exam_path(exam) %><% else %><strong><%= exam.title %></strong><% end %></td>
+      <td><%= pluralize(exam.problems.size, "Question") %></td>
       <td><%= link_to "Take Quiz", take_exam_path(exam) %></td>
-      <td><%= link_to "Destroy", exam_path(exam), method: :delete %></td>
+      <td><% if user_signed_in? && current_user.is_teacher %><%= link_to "Destroy", exam_path(exam), method: :delete %><% end %></td>
     </tr>
   <% end %>
 </table>

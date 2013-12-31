@@ -11,7 +11,8 @@ class ApplicationController < ActionController::Base
       return
     elsif user_signed_in?
       flash[:notice] = 'You must be an authorized Teacher to do that!'
-      redirect_to :root
+      # redirect_to :root
+      redirect_to :back
     else
       flash[:notice] = 'You need to sign in first!'
       redirect_to new_user_session_path
@@ -22,13 +23,4 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :is_teacher
     devise_parameter_sanitizer.for(:account_update) << :is_teacher
   end
-=begin
-  def devise_parameter_sanitizer
-    if resource_class == User
-      User::ParameterSanitizer.new(User, :user, params)
-    else
-      super
-    end
-  end
-=end
 end

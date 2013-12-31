@@ -1,5 +1,8 @@
 class ExamsController < ApplicationController
+  
   before_filter :authorize_teacher!, :except => [:index, :show, :take, :result]
+  before_filter :current_exam, :only => [:show, :edit, :update, :destroy, :take, :result]
+
   def new
     @exam = Exam.new
   end
@@ -17,7 +20,6 @@ class ExamsController < ApplicationController
   end
 
   def show
-    @exam = current_exam(params)
   end
 
   def index
@@ -25,12 +27,9 @@ class ExamsController < ApplicationController
   end
 
   def edit
-    @exam = current_exam(params)
   end
 
   def update
-    @exam = current_exam(params)
-
     if @exam.update_attributes(params[:exam].permit(:title, problem_ids: []))
       @exam.generate_problems(params[:exam][:number_of_problems].to_i, params[:exam][:number_of_operands].to_i, params[:exam][:operand_min].to_i, params[:exam][:operand_max].to_i, params[:exam][:chosen_operators])
       @exam.save
@@ -41,7 +40,6 @@ class ExamsController < ApplicationController
   end
 
   def destroy
-    @exam = current_exam(params)
     @exam.destroy
 
     redirect_to exams_path
@@ -49,18 +47,23 @@ class ExamsController < ApplicationController
 
   # As a Student, take an existing exam
   def take
-    @exam = current_exam(params)
   end
 
   # As a Student, see what score you got on the exam you just took
   def result
-    @exam = current_exam(params)
-
     @exam_reporter = @exam.evaluate(params[:answers])
   end
 
+  def teacher_logged_in?
+    if user_signed_in? && current_user.is_teacher
+      true
+    else
+      false
+    end
+  end
+
   private
-  def current_exam(parameters)
-    return Exam.find(parameters[:id])
+  def current_exam
+    @exam = Exam.find(params[:id])
   end
 end
