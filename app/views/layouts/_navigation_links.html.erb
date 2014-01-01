@@ -1,4 +1,4 @@
 <%# add navigation links to this file %>
 <%= link_to 'Home', root_path, class: 'navbar-brand' %>
 <%= link_to 'Quizzes', exams_path, class: 'navbar-brand' %>
-<%= link_to 'Problems', problems_path, class: 'navbar-brand' %>
+<% if user_signed_in? && current_user.is_teacher %><%= link_to 'Problems', problems_path, class: 'navbar-brand' %><% end %>
