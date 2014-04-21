@@ -18,6 +18,10 @@ module Quiz
             :request_specs => true
         g.fixture_replacement :factory_girl, :dir => "spec/factories"
     end
+
+    # Enable the asset pipeline
+    config.assets.enabled = true
+    config.assets.initialize_on_precompile = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

@@ -1,5 +1,5 @@
 <h1>Welcome to the Quizinator!</h1>
 <h2>"Come with me if you want to math!"</h2>
 
-<h3><%= link_to "All Math Problems", controller: "problems" %></h3>
+<% if user_signed_in? && current_user.is_teacher %><h3><%= link_to "All Math Problems", controller: "problems" %></h3><% end %>
 <h3><%= link_to "All Quizzes", controller: "exams" %></h3>
